@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+
+.my-textarea {
+  /* Set initial height */
+  height: 100px; /* You can adjust this as needed */
+
+  /* Allow vertical scrolling */
+  overflow-y: auto;
+
+  /* Set minimum and maximum heights */
+  min-height: 100px; /* Adjust as needed */
+  max-height: 300px; /* Adjust as needed */
+
+  /* Disable manual resizing */
+  resize: none;
+}
+
+/* Hide the scrollbar */
+.my-textarea::-webkit-scrollbar {
+  display: none;
+}
